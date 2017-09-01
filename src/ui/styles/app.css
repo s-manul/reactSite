@@ -1,0 +1,124 @@
+/* fonts
+-------------------------------------------------- */
+@font-face {
+    font-family: openSansRegular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: openSansSemibold;
+    src: url(../fonts/OpenSans-Semibold.ttf);
+}
+
+@font-face {
+    font-family: robottoRegular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+body {
+    font-family: openSansRegular;
+}
+
+h1, h2, h3, h4 {
+    font-family: robottoRegular;
+}
+
+
+
+/* custom button styles
+-------------------------------------------------- */
+.btn-custom {
+    outline: none;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    font-size: 14px;
+    font-family: openSansSemibold;
+    color: black;
+    position: relative;
+}
+
+.btn-custom--gold {
+    background: gold;
+}
+
+.btn-custom--whole-rounded {
+    border-radius: 25px;
+}
+
+.btn-custom--partly-rounded {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    border-top: 1px solid black;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.btn-custom:hover {
+    outline: none;
+    background: yellow;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.btn-custom:focus {
+    text-decoration: none;
+}
+
+.btn-custom:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* custom style
+-------------------------------------------------- */
+.background {
+    background: #fafafa;
+}
+
+.content-block {
+    padding: 40px 0;
+}
+
+.title {
+    padding-bottom: 40px;
+}
+
+.text-bold {
+    font-family: openSansSemibold;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.full-statistic {
+    padding-bottom: 200px;
+}
+
+
+
+/* 404
+-------------------------------------------------- */
+.image-404 {
+    margin-bottom: 0;
+    height: 600px;
+    background: url('../images/404.png') no-repeat center center;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .image-404 {
+        background: url('../images/404-1000.png') no-repeat center center;
+    }
+}
+

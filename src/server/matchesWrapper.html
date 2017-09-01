@@ -1,0 +1,25 @@
+<div id="matchesWrapper" style="margin-bottom: 50px">
+    <p>Пример</p>
+    <p>
+        [
+        {"date": "2018-07-15", "match": "вап", "bet": 1, "ratio": 0.005, "score": "0-15", "result": false},
+        {"date": "2019-06-28", "match": "Blooming - The Strongest", "bet": 1, "ratio": 2.82, "score": "4-1", "result": true}
+        ]
+    </p>
+    <p>Этот пример добавляет две записи в БД. Даже если хочешь добавить одну запись - все равно ставь квадратные скобки.</p>
+    <p>
+        Скобки [ ] - значит массив. Внутри массива через запятые перечислены элементы массива. В фигурных скобках { } - объекты -
+        элементы массива. В объектах пары ключ - значение перечисляются через запятую. Там, где строки - обрамляй двойными кавычками,
+        где числа и false/true - без кавычек.
+    </p>
+    <p>Дату писать именно так, через тире, ГГГГ-ММ-ДД.</p>
+    <textarea
+            class="text-field text-field--textarea"
+            id="addMatches"
+            rows="20"
+            placeholder='[{"date": "2002-07-15", "match": "LeHostelCrew - NAVI", "bet": 1, "ratio": 0.005, "score": "0-15", "result": false}]'
+    ></textarea>
+    <div class="btn-wrapper text-center">
+        <button id="sendMatches" class="btn-custom btn-custom--whole-rounded btn-custom--gold center-block text-uppercase">Отправить</button>
+    </div>
+</div>

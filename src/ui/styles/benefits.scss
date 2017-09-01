@@ -1,0 +1,15 @@
+$marginBottom: 40px;
+
+.benefits-block {
+  margin-bottom: $marginBottom;
+}
+
+.benefits-block--preLast {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .benefits-block--preLast {
+    margin-bottom: $marginBottom;
+  }
+}

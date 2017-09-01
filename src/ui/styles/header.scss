@@ -1,0 +1,30 @@
+@mixin navElementHover() {
+  color: black !important;
+  background: gold !important;
+}
+
+.navbar-fixed-top {
+  border: none;
+}
+
+header:after {
+  height: 50px;
+  content: '';
+  display: block;
+}
+
+.nav-element {
+  color: white !important;
+
+  &:hover {
+    @include navElementHover();
+  }
+
+  a {
+    color: white !important;
+
+    &:hover {
+      @include navElementHover();
+    }
+  }
+}

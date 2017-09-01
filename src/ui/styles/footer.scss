@@ -1,0 +1,48 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 250px;
+  overflow: auto !important;
+  padding-right: 0 !important;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding-top: 20px;
+  width: 100%;
+  height: 250px;
+  background-color: black;
+}
+
+
+.footer-nav-element {
+  color: white !important;
+
+  &:hover {
+    color: gold !important;
+    background: black !important;
+  }
+
+  a {
+    display: inline-block !important;
+    color: white !important;
+
+    &:hover {
+      color: gold !important;
+      background: black !important;
+    }
+  }
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .footer__text-center-xs {
+    text-align: center;
+  }
+}

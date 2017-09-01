@@ -1,0 +1,52 @@
+$width: 45%;
+
+.contacts__left {
+  float: left;
+  width: $width;
+}
+
+.contacts__right {
+  float: right;
+  width: $width;
+}
+
+.text-field {
+  width: 100% !important;
+  border: 2px solid black;
+  margin-bottom: 15px;
+  padding: 0 15px 0 10px;
+  outline: none;
+}
+
+.text-field--input {
+  height: 30px;
+}
+
+.text-field--textarea {
+  resize: none;
+  padding-top: 10px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper::after {
+  display: block;
+  position: absolute;
+  content: '*';
+  top: 4px;
+  right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__left {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contacts__right {
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+.proposals__border {
+  position: relative;
+  width: 70%;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+
+.proposals__title {
+  padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .proposals__border {
+    height: 200px;
+  }
+}

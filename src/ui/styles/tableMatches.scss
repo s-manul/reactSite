@@ -1,0 +1,14 @@
+table {
+  text-align: center;
+
+  th {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 20px !important;
+    border-bottom: none !important;
+  }
+
+  .no-border-top td {
+    border-top: none !important;
+  }
+}
