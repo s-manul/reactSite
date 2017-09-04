@@ -7,7 +7,7 @@
     "dev": "cross-env NODE_ENV=development node server.dev.js",
     "prod-dev": "cross-env NODE_ENV=development webpack --config webpack.prod.config.js & cross-env NODE_ENV=development node server.prod.js",
     "prod-prod": "cross-env NODE_ENV=production webpack --config webpack.prod.config.js & cross-env NODE_ENV=production node server.prod.js",
-    "postinstall": "NODE_ENV=production webpack --config webpack.prod.config.js",
+    "postinstall": "npm install --dev & NODE_ENV=production webpack --config webpack.prod.config.js",
     "start": "NODE_ENV=production node server.prod.js"
   },
   "engine": {
