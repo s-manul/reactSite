@@ -8,7 +8,9 @@ After installing all dependencies type:
 ```
 npm run dev
 ```
+## Deployment
 
+https://closed-club-site.herokuapp.com/
 
 ## Built With
 
