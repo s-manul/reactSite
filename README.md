@@ -10,7 +10,7 @@ npm run dev
 ```
 ## Deployment
 
-https://closed-club-site.herokuapp.com/
+https://react-closed-club.herokuapp.com/
 
 ## Built With
 
