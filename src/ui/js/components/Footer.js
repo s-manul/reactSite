@@ -70,7 +70,7 @@ export default class Footer extends React.Component {
             socialProps.lgOffset = 5;
         }
         return(
-            <footer className="footer">
+            <footer className='footer'>
                 <Grid>
                     <Row>
                         <Col sm={3} xsHidden>
@@ -82,15 +82,15 @@ export default class Footer extends React.Component {
                         <Col {...socialProps}>
                             <Nav>
                                 <NavItem className='footer__text-center-xs footer-nav-element'>
-                                    <img src={mail} alt="mail"/>
+                                    <img src={mail} alt='mail'/>
                                     <span>closedClub@gmail.com</span>
                                 </NavItem>
                                 <NavItem className='footer__text-center-xs footer-nav-element'>
-                                    <img src={vk} alt="vk"/>
+                                    <img src={vk} alt='vk'/>
                                     <span>/closedClub</span>
                                 </NavItem>
                                 <NavItem className='footer__text-center-xs footer-nav-element'>
-                                    <img src={inst} alt="inst"/>
+                                    <img src={inst} alt='inst'/>
                                     <span>@closedClub</span>
                                 </NavItem>
                             </Nav>

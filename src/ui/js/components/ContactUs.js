@@ -57,45 +57,45 @@ export default class ContactUs extends React.Component {
         const {nameVal, emailVal, textVal, modalShow, modalText} = this.state;
         return (
             <Scroll.Element name='contactUs'>
-                <div className="content-block contacts">
+                <div className='content-block contacts'>
                     <Grid>
                         <h2 className='text-center text-uppercase title'>Свяжитесь с нами</h2>
-                        <div className="contacts__left">
+                        <div className='contacts__left'>
                             <form onSubmit={this.onSubmit}>
-                                <h3 className="text-center no-margin-top">Оставьте сообщение</h3>
-                                <p className="text-center">Мы ответим вам в ближайшее время</p>
-                                <div className="input-wrapper">
+                                <h3 className='text-center no-margin-top'>Оставьте сообщение</h3>
+                                <p className='text-center'>Мы ответим вам в ближайшее время</p>
+                                <div className='input-wrapper'>
                                     <input
-                                        type="text"
-                                        className="text-field text-field--input"
-                                        placeholder="Ваше имя"
+                                        type='text'
+                                        className='text-field text-field--input'
+                                        placeholder='Ваше имя'
                                         value={nameVal}
                                         onChange={this.onChange('name')}
                                     />
                                 </div>
-                                <div className="input-wrapper">
+                                <div className='input-wrapper'>
                                     <input
-                                        type="text"
-                                        className="text-field text-field--input"
+                                        type='text'
+                                        className='text-field text-field--input'
                                         placeholder='Ваш e-mail'
                                         value={emailVal}
                                         onChange={this.onChange('email')}
                                     />
                                 </div>
                                 <textarea
-                                    className="text-field text-field--textarea"
+                                    className='text-field text-field--textarea'
                                     rows={5}
                                     placeholder='Введите сообщение'
                                     value={textVal}
                                     onChange={this.onChange('text')}
                                 />
-                                <div className="btn-wrapper text-center">
-                                    <button className="btn-custom btn-custom--whole-rounded btn-custom--gold center-block text-uppercase" type="submit">Отправить</button>
+                                <div className='btn-wrapper text-center'>
+                                    <button className='btn-custom btn-custom--whole-rounded btn-custom--gold center-block text-uppercase' type='submit'>Отправить</button>
                                 </div>
                             </form>
                         </div>
-                        <div className="contacts__right">
-                            <img src={ballPhone} alt="Мяч с телефоном" className="img-responsive center-block"/>
+                        <div className='contacts__right'>
+                            <img src={ballPhone} alt='Мяч с телефоном' className='img-responsive center-block'/>
                         </div>
                     </Grid>
                 </div>

@@ -1,12 +1,13 @@
 import React from 'react';
 
 import {Route, Switch} from 'react-router-dom'
-import {Helmet} from "react-helmet";
+import {Helmet} from 'react-helmet';
 import '../styles/app.css';
 
 import Admin from './pages/Admin';
 import FAQ from './pages/FAQ';
 import Main from './pages/Main';
+import NoMatch from './pages/NoMatch';
 import Statistic from './pages/Statistic';
 
 export default class App extends React.Component {
@@ -16,7 +17,7 @@ export default class App extends React.Component {
                 <Helmet
                     link={[
                         {rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css'},
-                        {rel: 'stylesheet', href: '/build/css/main.css'},
+                        {rel: 'stylesheet', href: '/build/main.css'},
                         {rel: 'shortcut icon', href: '/build/media/shield.png', type: 'image/png'},
                     ]}
                     meta={[
@@ -28,9 +29,10 @@ export default class App extends React.Component {
                 />
                 <Switch>
                     <Route exact path='/' component={Main}/>
-                    <Route path='/faq' component={FAQ}/>
-                    <Route path='/admin' component={Admin}/>
-                    <Route path='/statistic' component={Statistic}/>
+                    <Route exact path='/faq' component={FAQ}/>
+                    <Route exact path='/admin' component={Admin}/>
+                    <Route exact path='/statistic' component={Statistic}/>
+                    <Route component={NoMatch}/>
                 </Switch>
             </div>
         );

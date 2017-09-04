@@ -1,5 +1,5 @@
 import React from 'react';
-import {Helmet} from "react-helmet";
+import {Helmet} from 'react-helmet';
 import axios from 'axios';
 
 import Col from 'react-bootstrap/lib/Col';
@@ -71,13 +71,13 @@ export default class Statistic extends React.Component {
     render() {
         const {matches, options, value} = this.state;
         return (
-            <div className="full-statistic">
+            <div className='full-statistic'>
                 <Helmet
-                    title="closedCLub полная статистика"
+                    title='closedCLub полная статистика'
                 />
                 <Header addMenu={false}/>
                 <Grid>
-                    <h1 className="text-center text-uppercase title">Полная статистика</h1>
+                    <h1 className='text-center text-uppercase title'>Полная статистика</h1>
                     <Row style={{marginBottom: 30}}>
                         <Col sm={6} smOffset={3}>
                             <Select
@@ -96,10 +96,10 @@ export default class Statistic extends React.Component {
                         matches={matches}
                         selectValues={value}
                     />
-                    <div className="btn-wrapper text-center">
+                    <div className='btn-wrapper text-center'>
                         <Link
-                            to="/"
-                            className="btn-custom btn-custom--whole-rounded btn-custom--gold text-uppercase"
+                            to='/'
+                            className='btn-custom btn-custom--whole-rounded btn-custom--gold text-uppercase'
                         >
                             На главную страницу
                         </Link>

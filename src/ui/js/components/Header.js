@@ -24,7 +24,7 @@ export default class Header extends React.Component {
         if (addMenu) {
             return (
                 <Navbar.Collapse>
-                    <ul className="nav navbar-nav navbar-right">
+                    <ul className='nav navbar-nav navbar-right'>
                         {
                             navMenu.map((item, index) => {
                                 return(
@@ -32,7 +32,7 @@ export default class Header extends React.Component {
                                         <a
                                             className='nav-element text-uppercase'
                                             data-scrollTo={item.scrollTo}
-                                            href="/"
+                                            href='/'
                                             onClick={this.onClick}
                                         >
                                             {item.text}
@@ -41,7 +41,7 @@ export default class Header extends React.Component {
                                 );
                             })
                         }
-                        <li><Link className='nav-element text-uppercase' to="/faq">F.A.Q.</Link></li>
+                        <li><Link className='nav-element text-uppercase' to='/faq'>F.A.Q.</Link></li>
                     </ul>
                 </Navbar.Collapse>
             );
@@ -89,7 +89,7 @@ export default class Header extends React.Component {
                     <Grid>
                         <Navbar.Header>
                             <Navbar.Brand>
-                                <Link className='nav-element' to="/">closedClub</Link>
+                                <Link className='nav-element' to='/'>closedClub</Link>
                             </Navbar.Brand>
                             {addMenu && <Navbar.Toggle/>}
                         </Navbar.Header>

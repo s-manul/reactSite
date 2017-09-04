@@ -11,8 +11,9 @@ const app = express();
 
 const env = process.env.NODE_ENV;
 const port = process.env.PORT || 8080;
+const mongoURL = env === 'development' ? 'mongodb://localhost/site' : 'mongodb://phil:philko@ds129183.mlab.com:29183/site';
 mongoose.Promise = global.Promise;
-mongoose.connect(env === 'development' ? 'mongodb://localhost/site' : 'mongodb://phil:philko@ds129183.mlab.com:29183/site', {useMongoClient: true});
+mongoose.connect(mongoURL, {useMongoClient: true});
 
 const compiler = webpack(config);
 
@@ -25,11 +26,6 @@ app.use(webpackDevMiddleware(compiler, {
 }));
 app.use(webpackHotMiddleware(compiler.compilers.find(compiler => compiler.name === 'client')));
 app.use(webpackHotServerMiddleware(compiler));
-// app.use((err, req, res, next) => {
-//     res.status(422).send({err: err});
-// });
-
-
 
 app.listen(port, () => {
     console.log('listening to port ' + port);

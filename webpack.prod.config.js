@@ -3,20 +3,13 @@ const webpack = require('webpack');
 const fs = require('fs');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const StatsPlugin = require('stats-webpack-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
-//const nodeModules = {};
-// fs.readdirSync('node_modules')
-//     .filter(function(x) {
-//         return ['.bin'].indexOf(x) === -1;
-//     })
-//     .forEach(function(mod) {
-//         nodeModules[mod] = 'commonjs ' + mod;
-//     });
 const publicPath = '/build/';
 settings = [
     {
         name: 'client',
-        devtool: 'source-map',
         entry: ['babel-polyfill', './src/ui/js/index.js'],
         target: 'web',
         output: {
@@ -27,7 +20,18 @@ settings = [
         plugins: [
             new ExtractTextPlugin({
                 filename: '[name].css',
-            })
+            }),
+            new webpack.optimize.UglifyJsPlugin({
+                compress: {
+                    warnings: false,
+                    screw_ie8: true,
+                    drop_debugger: true
+                }
+            }),
+            new webpack.optimize.OccurrenceOrderPlugin(),
+            new OptimizeCssAssetsPlugin({
+                cssProcessorOptions: { discardComments: { removeAll: true } }
+            }),
         ],
         stats: { children: false },
         module: {
@@ -60,9 +64,12 @@ settings = [
                 },
                 {
                     test: /\.(jpe?g|png|gif|svg|ttf)$/i,
-                    use: [
-                        {loader: 'file-loader'}
-                    ]
+                    use: [{
+                        loader: 'file-loader',
+                        options: {
+                            name: 'media/[name].[ext]'
+                        }
+                    }]
                 }
             ]
         }
@@ -77,7 +84,14 @@ settings = [
             filename: 'server.js',
             publicPath: publicPath,
         },
-        //externals: nodeModules,
+        plugins: [
+            new StatsPlugin('stats.json', {
+                chunkModules: true,
+                modules: true,
+                chunks: true,
+                exclude: [/node_modules[\\\/]react/],
+            }),
+        ],
         module: {
             rules: [
                 {
@@ -102,9 +116,12 @@ settings = [
                 },
                 {
                     test: /\.(jpe?g|png|gif|svg|ttf)$/i,
-                    use: [
-                        {loader: 'file-loader'}
-                    ]
+                    use: [{
+                        loader: 'file-loader',
+                        options: {
+                            name: 'media/[name].[ext]'
+                        }
+                    }]
                 }
             ]
         }

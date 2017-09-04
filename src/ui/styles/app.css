@@ -105,20 +105,3 @@ h1, h2, h3, h4 {
 }
 
 
-
-/* 404
--------------------------------------------------- */
-.image-404 {
-    margin-bottom: 0;
-    height: 600px;
-    background: url('../images/404.png') no-repeat center center;
-}
-
-
-@media screen and (max-width: 767px) {
-
-    .image-404 {
-        background: url('../images/404-1000.png') no-repeat center center;
-    }
-}
-

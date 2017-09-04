@@ -1,5 +1,5 @@
 import React from 'react';
-import {Helmet} from "react-helmet";
+import {Helmet} from 'react-helmet';
 
 import FAQContent from '../components/FAQContent';
 import Footer from '../components/Footer';
@@ -11,7 +11,7 @@ export default class FAQ extends React.Component {
         return (
             <div>
                 <Helmet
-                    title="closedCLub F.A.Q."
+                    title='closedCLub F.A.Q.'
                 />
                 <Header addMenu={false}/>
                 <FAQContent/>

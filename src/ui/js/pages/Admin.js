@@ -1,5 +1,5 @@
 import React from 'react';
-import {Helmet} from "react-helmet";
+import {Helmet} from 'react-helmet';
 import axios from 'axios';
 
 import Col from 'react-bootstrap/lib/Col';
@@ -74,7 +74,7 @@ export default class Admin extends React.Component {
         return (
             <div>
                 <Helmet
-                    title="closedCLub admin"
+                    title='closedCLub admin'
                 />
                 <Header addMenu={false}/>
                 <Grid id='mainWrapper' style={{marginTop: 50}}>
@@ -84,23 +84,23 @@ export default class Admin extends React.Component {
                         <Col sm={6}>
                             <form onSubmit={this.onSubmit}>
                                 <input
-                                    type="text"
+                                    type='text'
                                     value={loginVal}
                                     onChange={this.onChange('login')}
-                                    className="text-field text-field--input"
-                                    placeholder="Логин"
+                                    className='text-field text-field--input'
+                                    placeholder='Логин'
                                 />
                                 <input
-                                    type="text"
+                                    type='text'
                                     value={passwordVal}
                                     onChange={this.onChange('password')}
-                                    className="text-field text-field--input"
-                                    placeholder="Пароль"
+                                    className='text-field text-field--input'
+                                    placeholder='Пароль'
                                 />
-                                <div className="btn-wrapper text-center">
+                                <div className='btn-wrapper text-center'>
                                     <button
-                                        className="btn-custom btn-custom--whole-rounded btn-custom--gold text-uppercase"
-                                        type="submit"
+                                        className='btn-custom btn-custom--whole-rounded btn-custom--gold text-uppercase'
+                                        type='submit'
                                     >
                                         Войти
                                     </button>
