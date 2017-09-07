@@ -7,7 +7,6 @@
     "dev": "cross-env NODE_ENV=development node server.dev.js",
     "prod-dev": "cross-env NODE_ENV=development webpack --config webpack.prod.config.js & cross-env NODE_ENV=development node server.prod.js",
     "prod-prod": "cross-env NODE_ENV=production webpack --config webpack.prod.config.js & cross-env NODE_ENV=production node server.prod.js",
-    "heroku-prebuild": "npm install --only=dev",
     "postinstall": "cross-env NODE_ENV=production webpack --config webpack.prod.config.js",
     "start": "cross-env NODE_ENV=production node server.prod.js"
   },
@@ -29,9 +28,8 @@
     "react-router-dom": "4.2.2",
     "react-scroll": "1.5.4",
     "react-select-plus": "1.0.0-rc.5",
-    "react-tooltip": "3.3.0"
-  },
-  "devDependencies": {
+    "react-tooltip": "3.3.0",
+
     "autoprefixer": "^7.1.3",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
