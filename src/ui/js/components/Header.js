@@ -89,7 +89,7 @@ export default class Header extends React.Component {
                     <Grid>
                         <Navbar.Header>
                             <Navbar.Brand>
-                                <Link className='nav-element' to='/'>closedClub</Link>
+                                <Link className='nav-element' to='/'>TomasBet</Link>
                             </Navbar.Brand>
                             {addMenu && <Navbar.Toggle/>}
                         </Navbar.Header>

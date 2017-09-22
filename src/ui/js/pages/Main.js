@@ -17,10 +17,10 @@ export default class Main extends React.Component {
             <div>
                 <Helmet
                     meta={[
-                        {name: 'keywords', content: 'прогнозы на матчи, ставки на матчи, ставки и пронозы, closedClub, купить прогнозы на матчи'},
-                        {name: 'Description', content:'closedClub занимается прогнозами на спортивные события. Вы можете приобрести пакеты прогнозов по низким ценам'},
+                        {name: 'keywords', content: 'прогнозы на матчи, ставки на матчи, ставки и пронозы, TomasBet, купить прогнозы на матчи'},
+                        {name: 'Description', content:'TomasBet занимается прогнозами на спортивные события. Вы можете приобрести пакеты прогнозов по низким ценам'},
                     ]}
-                    title='closedCLub ставки и прогнозы'
+                    title='TomasBet ставки и прогнозы'
                 />
                 <Header addMenu={true}/>
                 <MainImage/>

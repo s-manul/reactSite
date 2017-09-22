@@ -11,7 +11,7 @@ export default class FAQ extends React.Component {
         return (
             <div>
                 <Helmet
-                    title='closedCLub F.A.Q.'
+                    title='TomasBet F.A.Q.'
                 />
                 <Header addMenu={false}/>
                 <FAQContent/>

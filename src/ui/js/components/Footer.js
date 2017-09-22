@@ -75,25 +75,46 @@ export default class Footer extends React.Component {
                     <Row>
                         <Col sm={3} xsHidden>
                             <Navbar.Brand className='footer-nav-element'>
-                                <a href='/'>closedClub</a>
+                                <a href='/'>TomasBet</a>
                             </Navbar.Brand>
                         </Col>
                         {this.footerNavRender()}
                         <Col {...socialProps}>
-                            <Nav>
-                                <NavItem className='footer__text-center-xs footer-nav-element'>
-                                    <img src={mail} alt='mail'/>
-                                    <span>closedClub@gmail.com</span>
-                                </NavItem>
-                                <NavItem className='footer__text-center-xs footer-nav-element'>
-                                    <img src={vk} alt='vk'/>
-                                    <span>/closedClub</span>
-                                </NavItem>
-                                <NavItem className='footer__text-center-xs footer-nav-element'>
-                                    <img src={inst} alt='inst'/>
-                                    <span>@closedClub</span>
-                                </NavItem>
-                            </Nav>
+                            <ul className="nav">
+                                <li>
+                                    <a
+                                        href="/"
+                                        className="footer__text-center-xs
+                                        footer-nav-element"
+                                        onClick={(e) => e.target.closest('a').blur()}
+                                    >
+                                        <img src={mail} alt='mail'/>
+                                        <span>tomasbethelp@gmail.com</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://vk.com/tomasbetpublic"
+                                        target="_blank"
+                                        className="footer__text-center-xs footer-nav-element"
+                                        onClick={(e) => e.target.closest('a').blur()}
+                                    >
+                                        <img src={vk} alt='vk'/>
+                                        <span>/tomasbetpublic</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://instagram.com/tomasbet"
+                                        target="_blank"
+                                        className="footer__text-center-xs footer-nav-element"
+                                        onClick={(e) => e.target.closest('a').blur()}
+                                    >
+                                        <img src={inst} alt='inst'/>
+                                        <span>@tomasbet</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </Col>
                     </Row>
                 </Grid>

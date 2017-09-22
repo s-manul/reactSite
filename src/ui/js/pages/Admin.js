@@ -74,7 +74,7 @@ export default class Admin extends React.Component {
         return (
             <div>
                 <Helmet
-                    title='closedCLub admin'
+                    title='TomasBet admin'
                 />
                 <Header addMenu={false}/>
                 <Grid id='mainWrapper' style={{marginTop: 50}}>

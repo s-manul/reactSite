@@ -18,14 +18,14 @@ export default class App extends React.Component {
                     link={[
                         {rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css'},
                         {rel: 'stylesheet', href: '/build/main.css'},
-                        {rel: 'shortcut icon', href: '/build/media/shield.png', type: 'image/png'},
+                        {rel: 'shortcut icon', href: '/build/media/favicon16.ico', type: 'image/x-icon'},
                     ]}
                     meta={[
                         {charset: 'UTF-8'},
                         {'http-equiv': 'X-UA-Compatible', content: 'ie=edge'},
                         {name: 'viewport', content: 'width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'}
                     ]}
-                    title='closedClub'
+                    title='TomasBet'
                 />
                 <Switch>
                     <Route exact path='/' component={Main}/>

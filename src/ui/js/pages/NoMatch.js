@@ -14,7 +14,7 @@ export default class NoMatch extends React.Component {
         return (
             <div>
                 <Helmet
-                    title='closedCLub 404'
+                    title='TomasBet 404'
                     meta={[{name: 'viewport', content: 'width=980, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=0.25'}]}
                 />
                 <Header addMenu={false}/>
