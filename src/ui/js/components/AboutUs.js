@@ -16,7 +16,7 @@ export default class AboutUs extends React.Component {
                         <Row>
                             <Col sm={6}>
                                 <img
-                                    className='img-responsive img-rounded center-block'
+                                    className='img-responsive center-block'
                                     src={notebook}
                                     alt='Ноутбук'
                                 />

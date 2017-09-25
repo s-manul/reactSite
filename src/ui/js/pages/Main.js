@@ -20,7 +20,7 @@ export default class Main extends React.Component {
                         {name: 'keywords', content: 'прогнозы на матчи, ставки на матчи, ставки и пронозы, TomasBet, купить прогнозы на матчи'},
                         {name: 'Description', content:'TomasBet занимается прогнозами на спортивные события. Вы можете приобрести пакеты прогнозов по низким ценам'},
                     ]}
-                    title='TomasBet ставки и прогнозы'
+                    title='Ставки и прогнозы'
                 />
                 <Header addMenu={true}/>
                 <MainImage/>

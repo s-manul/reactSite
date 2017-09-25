@@ -63,7 +63,7 @@ settings = [
                     })
                 },
                 {
-                    test: /\.(jpe?g|png|gif|svg|ttf|ico)$/i,
+                    test: /\.(jpe?g|png|gif|svg|ttf)$/i,
                     use: [{
                         loader: 'file-loader',
                         options: {
@@ -115,7 +115,7 @@ settings = [
                     ]
                 },
                 {
-                    test: /\.(jpe?g|png|gif|svg|ttf|ico)$/i,
+                    test: /\.(jpe?g|png|gif|svg|ttf)$/i,
                     use: [{
                         loader: 'file-loader',
                         options: {

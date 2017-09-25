@@ -73,7 +73,7 @@ export default class Statistic extends React.Component {
         return (
             <div className='full-statistic'>
                 <Helmet
-                    title='TomasBet полная статистика'
+                    title='Полная статистика'
                 />
                 <Header addMenu={false}/>
                 <Grid>

@@ -18,7 +18,7 @@ export default class App extends React.Component {
                     link={[
                         {rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css'},
                         {rel: 'stylesheet', href: '/build/main.css'},
-                        {rel: 'shortcut icon', href: '/build/media/favicon16.ico', type: 'image/x-icon'},
+                        {rel: 'shortcut icon', href: '/build/media/favicon.png', type: 'image/png'},
                     ]}
                     meta={[
                         {charset: 'UTF-8'},
