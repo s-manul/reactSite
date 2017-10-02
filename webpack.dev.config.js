@@ -59,9 +59,14 @@ settings = [
                     })
                 },
                 {
-                    test: /\.(jpe?g|png|gif|svg|ttf)$/i,
+                    test: /\.(jpe?g|png|gif|svg|ttf|eot)$/i,
                     use: [
-                        {loader: 'file-loader'}
+                        {
+                            loader: 'file-loader',
+                            options: {
+                                name: '[name].[ext]'
+                            }
+                        }
                     ]
                 }
             ]
@@ -101,9 +106,14 @@ settings = [
                     ]
                 },
                 {
-                    test: /\.(jpe?g|png|gif|svg|ttf)$/i,
+                    test: /\.(jpe?g|png|gif|svg|ttf|eot)$/i,
                     use: [
-                        {loader: 'file-loader'}
+                        {
+                            loader: 'file-loader',
+                            options: {
+                                name: '[name].[ext]'
+                            }
+                        }
                     ]
                 }
             ]

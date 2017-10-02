@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from 'react-bootstrap/lib/Grid';
+import favicon from '../../images/favicon.png';
 
 const questions = [
     {
@@ -39,6 +40,7 @@ export default () => {
         <Grid>
             <h1>Часто задаваемые вопросы</h1>
             <div>{content}</div>
+            <img style={{position: 'absolute', opacity: 0, top: -10000, left: -10000}} src={favicon} alt="favicon"/>
         </Grid>
     )
 }

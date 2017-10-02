@@ -2,17 +2,17 @@
 -------------------------------------------------- */
 @font-face {
     font-family: openSansRegular;
-    src: url(../fonts/OpenSans-Regular.ttf);
+    src: url(../fonts/OpenSans.eot), url(../fonts/OpenSans.ttf);
 }
 
 @font-face {
     font-family: openSansSemibold;
-    src: url(../fonts/OpenSans-Semibold.ttf);
+    src: url(../fonts/OpenSans-Semibold.eot), url(../fonts/OpenSans-Semibold.ttf);
 }
 
 @font-face {
     font-family: robottoRegular;
-    src: url(../fonts/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto-Regular.eot), url(../fonts/Roboto-Regular.ttf);
 }
 
 body {
@@ -102,6 +102,10 @@ h1, h2, h3, h4 {
 
 .full-statistic {
     padding-bottom: 200px;
+}
+
+.nav>li>a:focus {
+    background-color: black;
 }
 
 
