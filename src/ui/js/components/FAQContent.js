@@ -28,10 +28,10 @@ const questions = [
 ];
 
 export default () => {
-    const content = questions.map((item) => {
+    const content = questions.map((item, index) => {
         return (
-            <div style={{padding: '10px 0'}}>
-                <p><em style={{fontFamily: 'openSansSemibold'}}>{item.question}</em></p>
+            <div key={index} style={{padding: '10px 0'}}>
+                <p style={{fontFamily: 'openSansSemibold'}}>{item.question}</p>
                 <p>{item.answer}</p>
             </div>
         )
