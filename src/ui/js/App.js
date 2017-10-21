@@ -23,7 +23,8 @@ export default class App extends React.Component {
                     meta={[
                         {charset: 'UTF-8'},
                         {'http-equiv': 'X-UA-Compatible', content: 'ie=edge'},
-                        {name: 'viewport', content: 'width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'}
+                        {name: 'viewport', content: 'width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'},
+                        {name: 'yandex-verification', content: 'a10864c7142f5418'},
                     ]}
                     title='TomasBet'
                 />

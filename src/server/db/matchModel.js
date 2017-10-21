@@ -11,7 +11,7 @@ const matychSchema = new Schema({
         required: true
     },
     bet: {
-        type: Number,
+        type: String,
         required: true
     },
     ratio: {

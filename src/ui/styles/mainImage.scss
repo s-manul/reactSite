@@ -16,9 +16,10 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .main-image {
-    padding: 50px 0 100px !important;
-    background: url('../images/main-image-768.png') no-repeat center center;
-  }
+@media screen and (max-width: 767px) { 
+  .main-image { 
+    padding: 0 !important; 
+    background-image: none; 
+    text-align: center; 
+  } 
 }

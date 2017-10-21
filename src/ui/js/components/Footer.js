@@ -81,19 +81,15 @@ export default class Footer extends React.Component {
                         {this.footerNavRender()}
                         <Col {...socialProps}>
                             <ul className="nav">
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="footer__text-center-xs
-                                        footer-nav-element"
-                                        onClick={(e) => e.target.closest('a').blur()}
-                                    >
-                                        <img src={mail} alt='mail'/>
-                                        <span>tomasbethelp@gmail.com</span>
-                                    </a>
+                                <li 
+                                    className="footer__text-center-xs footer-nav-element" 
+                                    style={{padding: '10px 15px'}} 
+                                > 
+                                    <img src={mail} alt='mail'/> 
+                                    <span>tomasbethelp@gmail.com</span> 
                                 </li>
                                 <li>
-                                    <a
+                                    <a  
                                         href="https://vk.com/tomasbetpublic"
                                         target="_blank"
                                         className="footer__text-center-xs footer-nav-element"
