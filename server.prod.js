@@ -7,7 +7,7 @@ const app = express();
 
 const env = process.env.NODE_ENV;
 const port = process.env.PORT || 80;
-const mongoURL = env === 'development' ? 'mongodb://localhost/site' : 'mongodb:sergey:123@ds123312.mlab.com:23312/web-site';
+const mongoURL = env === 'development' ? 'mongodb://localhost/site' : 'mongodb://sergey:123@ds123312.mlab.com:23312/web-site';
 mongoose.Promise = global.Promise;
 mongoose.connect(mongoURL, {useMongoClient: true});
 
